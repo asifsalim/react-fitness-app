@@ -64,7 +64,7 @@ class Exercise extends React.Component {
                       </Card.Text>
                       <Card.Text>For age:20-30</Card.Text>
                       <Card.Text>Time Required: 30s</Card.Text>
-                      <Button onClick={this.handleClick1} variant="primary">
+                      <Button onClick={this.handleClick1} className="darkColor">
                         Add To The List
                       </Button>
                     </Card.Body>
@@ -81,7 +81,7 @@ class Exercise extends React.Component {
                       </Card.Text>
                       <Card.Text>For age:20-30</Card.Text>
                       <Card.Text>Time Required: 20s</Card.Text>
-                      <Button onClick={this.handleClick2} variant="primary">
+                      <Button onClick={this.handleClick2} className="darkColor">
                         Add To The List
                       </Button>
                     </Card.Body>
@@ -98,7 +98,7 @@ class Exercise extends React.Component {
                       </Card.Text>
                       <Card.Text>For age:20-30</Card.Text>
                       <Card.Text>Time Required: 15s</Card.Text>
-                      <Button onClick={this.handleClick3} variant="primary">
+                      <Button onClick={this.handleClick3} className="darkColor">
                         Add To The List
                       </Button>
                     </Card.Body>

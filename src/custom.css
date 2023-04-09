@@ -96,6 +96,7 @@ body {
 .breakButton:hover{
   border: 2px solid #eb5e28;
 }
+
 .info-button {
   text-align: center;
   margin-bottom: 2rem;
@@ -112,6 +113,10 @@ body {
 }
 .tertiary-font {
   font-size: 1.2rem;
+}
+.darkColor{
+  background-color: #495057;
+  border: 1px solid #eb5e28;
 }
 .Exercise-border {
   background-color: #495057;
