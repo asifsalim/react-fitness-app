@@ -1,70 +1,90 @@
+/* whole body will be center and margin will be as describe below */
 body {
   width: auto;
   margin: 2rem 10rem;
 }
+/* website navbar */
 .OuterNavBox {
   padding: 1.6rem;
   background-color: #edede9;
   margin-bottom: 2rem;
   border-radius: 10px;
 }
-
+/* website main left section box */
 .OuterCardBox {
   background-color: #edede9;
   padding: 1.6rem;
   border-radius: 10px;
 }
+/* website main left section card styling */
 .cardSpace {
   padding: 1rem 0;
 }
+/* website navbar logo styling */
 .logo {
   width: 2.5rem;
   margin-right: 1.6rem;
 }
+/* website main left and right section add a break and excersize time styling */
 .Title {
   font-size: 1.6rem;
   font-weight: bold;
+  margin-top: 2rem;
 }
+/* website right section styling */
 .SideBox {
   background-color: #edede9;
   margin-left: 1rem;
   border-radius: 10px;
  border: 2px solid #eb5e28;
 }
+/* website left section card fixed width */
 .CardWidth {
   width: 16rem;
 }
+/* website right section profile pic styling */
 .ProfilePic {
   width: 5rem;
   border-radius: 100%;
 }
+/* website right section 1st section styling */
 .BreakFirstContent {
   margin: 1rem 0;
-  border: 2px solid black;
+  border: 2px solid #eb5e28;
   padding: 0.5rem 1rem;
   border-radius: 10px;
+  background-color: #495057;
 }
+/* website right section 1st section styling */
 .NameFont {
   font-weight: bold;
   font-size: 1.8rem;
+  color: #edede9;
+
 }
+/* website right section 1st section styling */
 .AddressFont {
   font-size: 1.2rem;
+  color: #edede9;
 }
+/* website right section 2nd section styling */
 .info-box {
   text-align: center;
   margin-bottom: 2rem;
   display: flex;
   justify-content: center;
 }
+/* website right section 2nd section styling */
 .Number {
   font-weight: bold;
   font-size: 1.6rem;
 }
+/* website right section 2nd section styling */
 .Number-info {
   font-weight: bold;
 }
-.SideButton {
+/* website right section 3rd section styling */
+.breakButton {
   border: none;
   background-color: #495057;
   color: #fff;
@@ -72,10 +92,14 @@ body {
   border-radius: 100%;
   border: 2px solid #eb5e28;
 }
+/* website right section 3rd section styling */
+.breakButton:hover{
+  border: 2px solid #eb5e28;
+}
 .info-button {
   text-align: center;
   margin-bottom: 2rem;
-  padding: 1rem;
+  padding: 0rem 1.2rem;
   border-radius: 1rem;
 }
 .clear-button {
@@ -106,7 +130,7 @@ body {
     padding: 1rem;
   }
   .Title {
-    width: 100%;
+    font-size: 1.2rem;
   }
   .logo {
     width: 2.5rem;
@@ -114,9 +138,16 @@ body {
   }
   .SideBox {
     margin-top: 2rem;
+    margin-left: 0;
+  }
+  .tertiary-font{
+    font-size: 1rem;
+  }
+  .SideButton{
+    padding: 5px;
   }
 }
-@media screen and (max-width: 1080px) {
+/* @media screen and (max-width: 1080px) {
   .SideBox {
     margin-left: 0;
   }
@@ -126,4 +157,4 @@ body {
   .Container-Title {
     text-align: center;
   }
-}
+} */

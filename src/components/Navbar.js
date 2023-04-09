@@ -32,11 +32,15 @@ import logo from "../images/logo/dumbbell-solid.svg";
 // export default NavigationBar;
 function NavigationBar() {
   return (
+    // this navbar section contains all the details of the top page
     <Navbar className="OuterNavBox" expand="lg">
+      {/* all the code are edited from bootstrap react website navbar section */}
       <Container>
+        {/* page logo image are imported here as logo variable here */}
         <Image src={logo} alt="Logo" className="logo" />
         <Navbar.Brand href="#home">Fitness App</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        {/* navbar collape actually turns into hamberburger icon after a certain screen size */}
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#home">Home</Nav.Link>

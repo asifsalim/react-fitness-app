@@ -5,14 +5,16 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import "../custom.css";
 import self from "../images/self.jpg";
+
 class Break extends React.Component {
   constructor(props) {
     super(props);
+    // it will initiate the break button as zero
     this.state = {
       clickedButton: "0",
     };
   }
-
+  // this method will look which button was clicked and set the value according that
   handleClick = (event) => {
     this.setState({
       clickedButton: event.target.value,
@@ -21,6 +23,7 @@ class Break extends React.Component {
 
   render() {
     const { clickedButton } = this.state;
+    // here timer are imported from Exercise.js app as props for calculaion
     const { timer } = this.props;
     return (
       <div>
@@ -34,80 +37,72 @@ class Break extends React.Component {
               </Row>
             </Col>
           </Row>
-          <Row className="info-box " sm={3}>
-            <Row>
-              <Col style={{ flexShrink: 1 }}>
-                <span className="Number">70</span>kg
-              </Col>
-              <Col className="Number-info">weight</Col>
-            </Row>
-            <Row>
-              <Col style={{ flexShrink: 1 }}>
-                <span className="Number">5.7&quot;</span>
-              </Col>
-              <Col className="Number-info">Height</Col>
-            </Row>
-
-            <Row>
-              <Col style={{ flexShrink: 1 }}>
-                <span className="Number">25</span>yr
-              </Col>
-              <Col className="Number-info">Age</Col>
-            </Row>
-          </Row>
+          <div className="com_color2 rounded-3 d-flex justify-content-around p-2">
+            <div className="d-flex flex-column p-0 m-0 ">
+              <div className="d-flex">
+                <h5 className="p-0 m-0">70</h5>
+                <p className="p-0 m-0">kg</p>
+              </div>
+              <p className="p-0 m-0 fw-bold">weight</p>
+            </div>
+            <div className="d-flex flex-column p-0 m-0">
+              <div className="">
+                <h5 className="p-0 m-0">5.8&quot;</h5>
+              </div>
+              <p className="p-0 m-0 fw-bold">Height</p>
+            </div>
+            <div className="d-flex flex-column p-0 m-0">
+              <div className="d-flex">
+                <h5 className="p-0 m-0">25</h5>
+                <p className="p-0 m-0">yr</p>
+              </div>
+              <p className="p-0 m-0 fw-bold">Age</p>
+            </div>
+          </div>
           <h3 className="Title">Add a Break</h3>
-          <Row className="info-button d-flex justify-content-center" md={1}>
-            <Row md={5}>
-              <Col>
-                <button
-                  className="SideButton"
-                  onClick={this.handleClick}
-                  value="10"
-                >
-                  10s
-                </button>
-              </Col>
-              <Col>
-                <button
-                  className="SideButton"
-                  onClick={this.handleClick}
-                  value="20"
-                >
-                  20s
-                </button>
-              </Col>
-              <Col>
-                <button
-                  className="SideButton"
-                  onClick={this.handleClick}
-                  value="30"
-                >
-                  30s
-                </button>
-              </Col>
-              <Col>
-                <button
-                  className="SideButton"
-                  onClick={this.handleClick}
-                  value="40"
-                >
-                  40s
-                </button>
-              </Col>
-              <Col>
-                <button
-                  className="SideButton"
-                  onClick={this.handleClick}
-                  value="50"
-                >
-                  50s
-                </button>
-              </Col>
-            </Row>
-          </Row>
+          <div className="com_color2 rounded-3 d-flex justify-content-around p-3 mt-2">
+            <div>
+              <button
+                // this.handleClick will trigger after clicked the button here
+                onClick={this.handleClick}
+                className="btn rounded-circle breakButton p-2"
+                value="10"
+              >
+                10s
+              </button>
+            </div>
+            <div>
+              <button
+                onClick={this.handleClick}
+                className="btn rounded-circle breakButton p-2"
+                value="20"
+              >
+                20s
+              </button>
+            </div>
+            <div>
+              <button
+                onClick={this.handleClick}
+                className="btn rounded-circle breakButton p-2"
+                value="30"
+              >
+                30s
+              </button>
+            </div>
+            <div>
+              <button className="btn rounded-circle breakButton p-2" value="40">
+                40s
+              </button>
+            </div>
+            <div>
+              <button className="btn rounded-circle breakButton p-2" value="50">
+                50s
+              </button>
+            </div>
+          </div>
           <Row>
             <h3 className="Title">Exercise Details</h3>
-            <Row className="info-button mx-auto" md={1}>
+            <Row className="info-button mx-auto">
               <Row md={1} className="mx-auto">
                 <Col className="d-flex justify-content-between tertiary-font Exercise-border">
                   <div>Excercise Time </div>
