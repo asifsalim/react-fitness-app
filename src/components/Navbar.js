@@ -33,7 +33,7 @@ import logo from "../images/logo/dumbbell-solid.svg";
 function NavigationBar() {
   return (
     // this navbar section contains all the details of the top page
-    <Navbar className="OuterNavBox" expand="lg">
+    <Navbar className="OuterNavBox" expand="sm">
       {/* all the code are edited from bootstrap react website navbar section */}
       <Container>
         {/* page logo image are imported here as logo variable here */}

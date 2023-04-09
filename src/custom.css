@@ -1,6 +1,5 @@
 /* whole body will be center and margin will be as describe below */
 body {
-  width: auto;
   margin: 2rem 10rem;
 }
 /* website navbar */
@@ -36,7 +35,7 @@ body {
   background-color: #edede9;
   margin-left: 1rem;
   border-radius: 10px;
- border: 2px solid #eb5e28;
+  border: 2px solid #eb5e28;
 }
 /* website left section card fixed width */
 .CardWidth {
@@ -60,7 +59,6 @@ body {
   font-weight: bold;
   font-size: 1.8rem;
   color: #edede9;
-
 }
 /* website right section 1st section styling */
 .AddressFont {
@@ -93,7 +91,7 @@ body {
   border: 2px solid #eb5e28;
 }
 /* website right section 3rd section styling */
-.breakButton:hover{
+.breakButton:hover {
   border: 2px solid #eb5e28;
 }
 
@@ -114,7 +112,7 @@ body {
 .tertiary-font {
   font-size: 1.2rem;
 }
-.darkColor{
+.darkColor {
   background-color: #495057;
   border: 1px solid #eb5e28;
 }
@@ -129,7 +127,7 @@ body {
 
 @media screen and (max-width: 768px) {
   body {
-    margin: 2rem;
+    margin: 1.6rem;
   }
   .OuterNavBox {
     padding: 1rem;
@@ -145,14 +143,20 @@ body {
     margin-top: 2rem;
     margin-left: 0;
   }
-  .tertiary-font{
+  .tertiary-font {
     font-size: 1rem;
   }
-  .SideButton{
+  .SideButton {
     padding: 5px;
   }
+  .NameFont {
+    font-size: 1.2rem;
+  }
+  .AddressFont{
+    font-size: 1rem;
+  }
 }
-/* @media screen and (max-width: 1080px) {
+@media screen and (max-width: 1080px) {
   .SideBox {
     margin-left: 0;
   }
@@ -162,4 +166,5 @@ body {
   .Container-Title {
     text-align: center;
   }
-} */
+}
+
