@@ -1,0 +1,129 @@
+body {
+  width: auto;
+  margin: 2rem 10rem;
+}
+.OuterNavBox {
+  padding: 1.6rem;
+  background-color: #edede9;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+
+.OuterCardBox {
+  background-color: #edede9;
+  padding: 1.6rem;
+  border-radius: 10px;
+}
+.cardSpace {
+  padding: 1rem 0;
+}
+.logo {
+  width: 2.5rem;
+  margin-right: 1.6rem;
+}
+.Title {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.SideBox {
+  background-color: #edede9;
+  margin-left: 1rem;
+  border-radius: 10px;
+ border: 2px solid #eb5e28;
+}
+.CardWidth {
+  width: 16rem;
+}
+.ProfilePic {
+  width: 5rem;
+  border-radius: 100%;
+}
+.BreakFirstContent {
+  margin: 1rem 0;
+  border: 2px solid black;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+}
+.NameFont {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+.AddressFont {
+  font-size: 1.2rem;
+}
+.info-box {
+  text-align: center;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.Number {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+.Number-info {
+  font-weight: bold;
+}
+.SideButton {
+  border: none;
+  background-color: #495057;
+  color: #fff;
+  padding: 15px;
+  border-radius: 100%;
+  border: 2px solid #eb5e28;
+}
+.info-button {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.clear-button {
+  margin: 1rem 0;
+  border-radius: 10px;
+}
+.thanks-button {
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+.tertiary-font {
+  font-size: 1.2rem;
+}
+.Exercise-border {
+  background-color: #495057;
+  color: #edede9;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 1rem 0;
+  border: 2px solid #eb5e28;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    margin: 2rem;
+  }
+  .OuterNavBox {
+    padding: 1rem;
+  }
+  .Title {
+    width: 100%;
+  }
+  .logo {
+    width: 2.5rem;
+    margin-right: 0;
+  }
+  .SideBox {
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .SideBox {
+    margin-left: 0;
+  }
+  .CardWidth {
+    width: 25rem;
+  }
+  .Container-Title {
+    text-align: center;
+  }
+}

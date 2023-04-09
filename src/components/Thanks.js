@@ -1,44 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
+import { Button, Modal } from "react-bootstrap";
 
-class Thanks extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      showPopup: false,
-    };
-    this.handleClick = this.handleClick.bind(this);
-    this.handlePopupClose = this.handlePopupClose.bind(this);
-  }
+export default function Thanks() {
+  const [show, setShow] = useState(false);
 
-  handleClick() {
-    this.setState({
-      showPopup: true,
-    });
-  }
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
-  handlePopupClose() {
-    this.setState({
-      showPopup: false,
-    });
-  }
-
-  render() {
-    const { showPopup } = this.state;
-    return (
-      <div>
-        <button onClick={this.handleClick}>Activity Done!</button>
-        {showPopup && (
-          <div className="popup">
-            <div className="popup-content">
-              <h2>Congratulations!</h2>
-              <p>You did it!</p>
-              <button onClick={this.handlePopupClose}>Close</button>
-            </div>
-          </div>
-        )}
+  return (
+    <div>
+      <div className="d-grid gap-2 thanks-button">
+        <Button variant="primary" onClick={handleShow}>
+          Activity Done
+        </Button>
       </div>
-    );
-  }
-}
 
-export default Thanks;
+      <Modal show={show} onHide={handleClose} centered>
+        <Modal.Header closeButton>
+          <Modal.Title>Congratulation!!!</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <p>You have successfully completed the task today.</p>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={handleClose}>
+            Save Changes
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    </div>
+  );
+}
