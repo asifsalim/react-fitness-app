@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Button, Modal } from "react-bootstrap";
 
 // this modal are copied from bootstrap react section as a popup window which will give us a thanks message after clicked this button
-export default function Thanks() {
+function Thanks() {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -35,3 +35,4 @@ export default function Thanks() {
     </div>
   );
 }
+export default Thanks;

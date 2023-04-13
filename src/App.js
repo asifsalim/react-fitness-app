@@ -1,17 +1,17 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import React from "react";
 import Exercise from "./components/Excersize";
 import NavigationBar from "./components/Navbar";
 
-function App() {
-  return (
-    <div>
-      <span>
+class App extends React.Component {
+  render() {
+    return (
+      <div>
         <NavigationBar />
         <Exercise />
-        {/* <CardColumnsExample /> */}
-      </span>
-    </div>
-  );
+      </div>
+    );
+  }
 }
 
 export default App;
