@@ -18,14 +18,8 @@ class Exercise extends React.Component {
     };
   }
   // these handleClick set as arrow function method to avoid "this" confusion and it takes the time and added value as required
-  handleClick1 = () => {
-    this.setState({ Time: this.state.Time + 30 });
-  };
-  handleClick2 = () => {
-    this.setState({ Time: this.state.Time + 20 });
-  };
-  handleClick3 = () => {
-    this.setState({ Time: this.state.Time + 15 });
+  handleClick1 = (ButtonTime) => {
+    this.setState({ Time: this.state.Time + ButtonTime });
   };
   handleClear = () => {
     this.setState({
@@ -40,7 +34,7 @@ class Exercise extends React.Component {
         {/* left side container */}
         <Container>
           <Row xs={1}>
-            <Col lg={true} className="OuterCardBox">
+            <Col lg={8} className="OuterCardBox">
               <div>
                 {/* container title for custom css style */}
                 <h1 className="Container-Title">
@@ -49,18 +43,25 @@ class Exercise extends React.Component {
               </div>
               {/* here xs mean when screen will xtra small then card will be 1 by 1 otherwise lg or large screen it will be 3 by 3 */}
               <Row className="d-flex flex-wrap">
-                <Col className="d-flex justify-content-center align-items-center flex-wrap cardSpace">
+                <Col className="d-flex justify-content-around  flex-wrap">
                   {/* cardWidth css used for a fixed card width */}
                   {data.map((item, index) => (
                     <Card key={index} className="CardWidth">
-                      <Image src={item.imgUrl} alt={item.title} />
+                      <Image
+                        src={item.imgUrl}
+                        alt={item.title}
+                        className="CardImage"
+                      />
                       <Card.Body className="d-grid gap-2">
                         <Card.Title>{item.title}</Card.Title>
-                        <Card.Text>{item.description}</Card.Text>
-                        <Card.Text>{item.time}</Card.Text>
-                        <Card.Text>{item.age}</Card.Text>
+                        <Card.Text>
+                          {item.description.slice(0, 100)}...
+                        </Card.Text>
+                        <Card.Text>For Age: {item.age}</Card.Text>
+                        <Card.Text>Time Required: {item.time}</Card.Text>
                         <Button
-                          onClick={this.handleClick1}
+                          onClick={() => this.handleClick1(item.time)}
+                          value={item.time}
                           className="darkColor"
                         >
                           Add To The List
