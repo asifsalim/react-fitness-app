@@ -5,9 +5,7 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import "../custom.css";
-import leglift from "../images/leglift.jpg";
-import pushup from "../images/pushup.jpg";
-import rolling from "../images/rolling.jpg";
+import data from "../data.json";
 import Break from "./Break";
 import Thanks from "./Thanks";
 //this Exercise app actually contain the main body part of the website
@@ -50,59 +48,26 @@ class Exercise extends React.Component {
                 </h1>
               </div>
               {/* here xs mean when screen will xtra small then card will be 1 by 1 otherwise lg or large screen it will be 3 by 3 */}
-              <Row xs={1} lg={3} className="d-flex flex-wrap">
-                <Col className="d-flex justify-content-center align-items-center cardSpace">
+              <Row className="d-flex flex-wrap">
+                <Col className="d-flex justify-content-center align-items-center flex-wrap cardSpace">
                   {/* cardWidth css used for a fixed card width */}
-                  <Card className="CardWidth">
-                    {/* rolling imported as variable for card picture */}
-                    <Image src={rolling} alt="Card image" />
-                    <Card.Body className="d-grid gap-2">
-                      <Card.Title>Rolling</Card.Title>
-                      <Card.Text>
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card&apos;s content.
-                      </Card.Text>
-                      <Card.Text>For age:20-30</Card.Text>
-                      <Card.Text>Time Required: 30s</Card.Text>
-                      <Button onClick={this.handleClick1} className="darkColor">
-                        Add To The List
-                      </Button>
-                    </Card.Body>
-                  </Card>
-                </Col>
-                <Col className="d-flex justify-content-center align-items-center cardSpace">
-                  <Card className="CardWidth">
-                    <Image src={pushup} alt="Card image" />
-                    <Card.Body className="d-grid gap-2">
-                      <Card.Title>PushUp</Card.Title>
-                      <Card.Text>
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card&apos;s content.
-                      </Card.Text>
-                      <Card.Text>For age:20-30</Card.Text>
-                      <Card.Text>Time Required: 20s</Card.Text>
-                      <Button onClick={this.handleClick2} className="darkColor">
-                        Add To The List
-                      </Button>
-                    </Card.Body>
-                  </Card>
-                </Col>
-                <Col className="d-flex justify-content-center align-items-center cardSpace">
-                  <Card className="CardWidth">
-                    <Image src={leglift} alt="Card image" />
-                    <Card.Body className="d-grid gap-2">
-                      <Card.Title>Single Leg Lift</Card.Title>
-                      <Card.Text>
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card&apos;s content.
-                      </Card.Text>
-                      <Card.Text>For age:20-30</Card.Text>
-                      <Card.Text>Time Required: 15s</Card.Text>
-                      <Button onClick={this.handleClick3} className="darkColor">
-                        Add To The List
-                      </Button>
-                    </Card.Body>
-                  </Card>
+                  {data.map((item, index) => (
+                    <Card key={index} className="CardWidth">
+                      <Image src={item.imgUrl} alt={item.title} />
+                      <Card.Body className="d-grid gap-2">
+                        <Card.Title>{item.title}</Card.Title>
+                        <Card.Text>{item.description}</Card.Text>
+                        <Card.Text>{item.time}</Card.Text>
+                        <Card.Text>{item.age}</Card.Text>
+                        <Button
+                          onClick={this.handleClick1}
+                          className="darkColor"
+                        >
+                          Add To The List
+                        </Button>
+                      </Card.Body>
+                    </Card>
+                  ))}
                 </Col>
               </Row>
             </Col>

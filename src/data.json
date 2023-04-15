@@ -1,0 +1,74 @@
+[
+    {
+      "_id": "routine-xyx-0001",
+      "title": "Rolling",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet",
+      "time": 30,
+      "imgUrl": "https://image.shutterstock.com/image-photo/handsome-athletic-young-man-doing-260nw-365909249.jpg",
+      "age": "20-30"
+    },
+    {
+      "_id": "routine-xyx-0002",
+      "title": "Pushup",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet",
+      "time": 30,
+      "imgUrl": "https://media.gq.com/photos/59712c8b75d2965381f8bf69/16:9/w_2560%2Cc_limit/2017-06_GQ_FITNESS-Push-Ups_3x2.jpg",
+      "age": "20-50"
+    },
+    {
+      "_id": "routine-xyx-0003",
+      "title": "Single leg lift",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet",
+      "time": 20,
+      "imgUrl": "https://content.jwplatform.com/thumbs/CoT8gO66-1920.jpg",
+      "age": "30-40"
+    },
+    {
+      "_id": "routine-xyx-0004",
+      "title": "single leg extension",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet",
+      "time": 25,
+      "imgUrl": "https://hips.hearstapps.com/womenshealth-production.s3.amazonaws.com/images/279/mk-singlelegextensions__medium_4x3.jpg?crop=1xw:0.6666666666666666xh;center,top&resize=480:*",
+      "age": "20-40"
+    },
+    {
+      "_id": "routine-xyx-0005",
+      "title": "Half kneeling",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet",
+      "time": 15,
+      "imgUrl": "https://www.functionalmovement.com/exercises/image/22860",
+      "age": "25-45"
+    },
+    {
+      "_id": "routine-xyx-0006",
+      "title": "Back dis exercise",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet",
+      "time": 35,
+      "imgUrl": "https://cdn.shopify.com/s/files/1/0763/4541/files/Woman-stretching-her-back-on-a-yoga-mat2.jpg?v=1570775128",
+      "age": "30-55"
+    },
+    {
+      "_id": "routine-xyx-0007",
+      "title": "Foot sliders exercise",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet",
+      "time": 25,
+      "imgUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fpharmeasy.in%2Fblog%2F5-easy-to-do-exercises-to-stay-strong-during-lockdown%2F&psig=AOvVaw1dQ_PlxDW9zyhoqee0NIxK&ust=1680750042325000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCID3iPnfkf4CFQAAAAAdAAAAABAb",
+      "age": "25-40"
+    },
+    {
+      "_id": "routine-xyx-0008",
+      "title": "Exercise ball",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet",
+      "time": 35,
+      "imgUrl": "https://www.shape.com/thmb/ouGduxts1GRlp_ZXtExKtMaboPs=/2000x1050/filters:fill(auto,1)/best-exercise-balls-fb-2000-945b20acf4ec4864a01607c05d66edd9.jpg",
+      "age": "30-50"
+    },
+    {
+      "_id": "routine-xyx-0009",
+      "title": "Dumbbell",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet",
+      "time": 35,
+      "imgUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Ffamilydoctor.org%2Fwhy-exercise%2F&psig=AOvVaw1dQ_PlxDW9zyhoqee0NIxK&ust=1680750042325000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCID3iPnfkf4CFQAAAAAdAAAAABAE",
+      "age": "20-55"
+    }
+  ]
