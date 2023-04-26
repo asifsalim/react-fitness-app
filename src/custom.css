@@ -167,10 +167,10 @@ body {
   .SideButton {
     padding: 5px;
   }
-  .NameFont {
+  .ContentName {
     font-size: 1.2rem;
   }
-  .AddressFont {
+  .ContentAdress {
     font-size: 1rem;
   }
 }
