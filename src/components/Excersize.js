@@ -12,12 +12,10 @@ import Thanks from "./Thanks";
 class Exercise extends React.Component {
   constructor(props) {
     super(props);
-    // as we need exercise time thats why i set the time as a state zero to initiate
     this.state = {
       Time: 0,
     };
   }
-  // these handleClick set as arrow function method to avoid "this" confusion and it takes the time and added value as required
   handleClick1 = (ButtonTime) => {
     this.setState({ Time: this.state.Time + ButtonTime });
   };
@@ -27,24 +25,19 @@ class Exercise extends React.Component {
     });
   };
   render() {
-    // here i destructure the time as Time for further use
     const { Time } = this.state;
     return (
       <div>
-        {/* left side container */}
         <Container>
           <Row xs={1}>
             <Col lg={8} className="OuterCardBox">
               <div>
-                {/* container title for custom css style */}
                 <h1 className="Container-Title">
                   Select Today&apos;s Activities
                 </h1>
               </div>
-              {/* here xs mean when screen will xtra small then card will be 1 by 1 otherwise lg or large screen it will be 3 by 3 */}
               <Row className="d-flex flex-wrap">
                 <Col className="d-flex justify-content-around  flex-wrap">
-                  {/* cardWidth css used for a fixed card width */}
                   {data.map((item, index) => (
                     <Card key={index} className="CardWidth">
                       <Image
@@ -72,18 +65,15 @@ class Exercise extends React.Component {
                 </Col>
               </Row>
             </Col>
-            {/* here is the right side section */}
-            {/* SideBox class uses as the custom css */}
+
             <Col lg={4} className="SideBox">
-              {/* in Break component i have passed the "Time" state as props so that i will recieve that props as timer in Button.js there as use that further */}
               <Break timer={Time} />
               <div className="d-grid gap-2 clear-button">
-                {/* this button actually clear the timer to zero again as the clicked button */}
                 <Button variant="warning" onClick={this.handleClear}>
                   Clear the List
                 </Button>
               </div>
-              {/* Thanks app uses here as a popup window */}
+
               <Thanks />
             </Col>
           </Row>

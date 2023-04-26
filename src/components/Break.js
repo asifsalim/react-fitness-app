@@ -16,38 +16,38 @@ const Break = ({ timer }) => {
     <div>
       <Container>
         <Row>
-          <Col className="BreakFirstContent d-flex">
+          <Col className="d-flex BorderContent">
             <Image src={self} className="ProfilePic" />
             <Row md={1} className="d-flex align-items-center mx-4">
-              <Col className="NameFont">Asif Salim</Col>
-              <Col className="AddressFont">Saidpur,Rangpur</Col>
+              <Col className="ContentName">Asif Salim</Col>
+              <Col className="ContentAdress">Saidpur,Rangpur</Col>
             </Row>
           </Col>
         </Row>
-        <div className="com_color2 rounded-3 d-flex justify-content-around p-2">
-          <div className="d-flex flex-column p-0 m-0 ">
+        <div className="d-flex justify-content-around">
+          <div className="d-flex flex-column">
             <div className="d-flex">
-              <h5 className="p-0 m-0">70</h5>
-              <p className="p-0 m-0">kg</p>
+              <h5 className="ContentDetails">70</h5>
+              <p className="ContentDetails">kg</p>
             </div>
-            <p className="p-0 m-0 fw-bold">weight</p>
+            <p className="ContentDetails ContentDetailBold">weight</p>
           </div>
-          <div className="d-flex flex-column p-0 m-0">
-            <div className="">
-              <h5 className="p-0 m-0">5.8&quot;</h5>
-            </div>
-            <p className="p-0 m-0 fw-bold">Height</p>
-          </div>
-          <div className="d-flex flex-column p-0 m-0">
+          <div className="d-flex flex-column ContentDetails">
             <div className="d-flex">
-              <h5 className="p-0 m-0">25</h5>
-              <p className="p-0 m-0">yr</p>
+              <h5 className="ContentDetails">5.8&quot;</h5>
             </div>
-            <p className="p-0 m-0 fw-bold">Age</p>
+            <p className="ContentDetails ContentDetailBold">Height</p>
+          </div>
+          <div className="d-flex flex-column ContentDetails">
+            <div className="d-flex">
+              <h5 className="ContentDetails">25</h5>
+              <p className="ContentDetails">yr</p>
+            </div>
+            <p className="ContentDetails ContentDetailBold">Age</p>
           </div>
         </div>
-        <h3 className="Title">Add a Break</h3>
-        <div className="com_color2 rounded-3 d-flex justify-content-around p-3 mt-2">
+        <h3 className="ContentTitle">Add a Break</h3>
+        <div className="d-flex justify-content-around">
           <div>
             <button
               // handleClick will trigger after clicked the button here
@@ -96,7 +96,7 @@ const Break = ({ timer }) => {
           </div>
         </div>
         <Row>
-          <h3 className="Title">Exercise Details</h3>
+          <h3 className="ContentTitle">Exercise Details</h3>
           <Row className="info-button mx-auto">
             <Row md={1} className="mx-auto">
               <Col className="d-flex justify-content-between tertiary-font Exercise-border">

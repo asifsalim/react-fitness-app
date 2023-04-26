@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Button, Modal } from "react-bootstrap";
 
-// this modal are copied from bootstrap react section as a popup window which will give us a thanks message after clicked this button
 function Thanks() {
   const [show, setShow] = useState(false);
 

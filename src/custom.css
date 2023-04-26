@@ -23,7 +23,7 @@ body {
   margin-right: 1.6rem;
 }
 /* website main left and right section add a break and excersize time styling */
-.Title {
+.ContentTitle {
   font-size: 1.6rem;
   font-weight: bold;
   margin-top: 2rem;
@@ -53,7 +53,7 @@ body {
   border-radius: 100%;
 }
 /* website right section 1st section styling */
-.BreakFirstContent {
+.BorderContent {
   margin: 1rem 0;
   border: 2px solid #eb5e28;
   padding: 0.5rem 1rem;
@@ -61,15 +61,22 @@ body {
   background-color: #495057;
 }
 /* website right section 1st section styling */
-.NameFont {
+.ContentName {
   font-weight: bold;
   font-size: 1.8rem;
   color: #edede9;
 }
 /* website right section 1st section styling */
-.AddressFont {
+.ContentAdress {
   font-size: 1.2rem;
   color: #edede9;
+}
+.ContentDetails{
+  padding: 0;
+  margin: 0;
+}
+.ContentDetailBold{
+  font-weight: bold;
 }
 /* website right section 2nd section styling */
 .info-box {
